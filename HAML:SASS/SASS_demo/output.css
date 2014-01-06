@@ -1,0 +1,41 @@
+/* VARIABLES */
+/* MIXINS */
+/* VARIABLES */
+body {
+  font: 100% Helvetica, Arial, sans-serif;
+  color: #b3d4fc;
+  padding: 20px 10px; }
+
+/* PLAIN CSS STILL WORKS! */
+h1 {
+  color: pink; }
+
+/* MIXINS */
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+/* NESTING */
+nav {
+  background-color: black; }
+  nav ul li {
+    display: inline-block;
+    color: white; }
+
+li {
+  color: green; }
+  li:hover {
+    color: blue; }
+
+/* INHERITANCE AND EXTENDS */
+.message, .success, .error {
+  border: 1px solid #333;
+  padding: 20px; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }

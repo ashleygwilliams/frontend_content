@@ -1,0 +1,64 @@
+@import
+
+/* VARIABLES */
+
+$font-stack: Helvetica, Arial, sans-serif;
+$flatiron-blue: #b3d4fc;
+
+
+/* MIXINS */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/* VARIABLES */
+body {
+  font: 100% $font-stack;
+  color: $flatiron-blue;
+  padding: 20px 10px;
+}
+
+/* PLAIN CSS STILL WORKS! */
+h1 {
+  color: pink;
+}
+
+/* MIXINS */
+.box {
+  @include border-radius(10px);
+}
+
+/* NESTING */
+nav {
+  background-color: black;
+  ul li {
+    display: inline-block;
+    color: white;
+  }
+}
+
+li {
+  color: green;
+  &:hover {
+    color:blue;
+  }
+}
+
+/* INHERITANCE AND EXTENDS */
+.message {
+  border: 1px solid #333;
+  padding: 20px;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}

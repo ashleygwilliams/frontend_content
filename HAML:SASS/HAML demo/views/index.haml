@@ -1,0 +1,26 @@
+<h1>classy</h1>
+<h2>as fuck</h2>
+
+/content next to
+.row Hello World
+
+/content below
+.row
+  Hello World, Again
+
+/content next to and below == ILLEGAL NESTING!!
+/.row Hello World
+/%img{:src=>"http://placekitten.com/200/200"}
+
+.row
+  HELLO CAT
+  %img{:src=>"http://placekitten.com/200/200"}
+
+.row %img{:src=>"http://placekitten.com/200/200"}
+
+%p
+  the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a href="#">electronic</a> typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishin
+
+- 5.times do |i|
+  %h1
+    = "i love haml #{i} times"

@@ -37,6 +37,7 @@ h3 {
   color: #c3322f;
 }
 
+
 nav>a {
   float: left;
   padding: 20px;
@@ -59,6 +60,10 @@ section {
   display: inline-block;
   position: absolute;
   bottom: 0;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 
 #blog article {
